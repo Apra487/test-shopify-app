@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f32d41cd29f807441868091055843ab6"
+name = "slit-app"
+application_url = "https://das-spirits-prefer-township.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-a547c492.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://das-spirits-prefer-township.trycloudflare.com/auth/callback",
+  "https://das-spirits-prefer-township.trycloudflare.com/auth/shopify/callback",
+  "https://das-spirits-prefer-township.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
